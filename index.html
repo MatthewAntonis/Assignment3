@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Meta tags for character set and responsiveness -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pizza Order Form</title>
+    <!-- Link to external CSS file -->
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Main heading for the page -->
+        <h1>The Pizza Maker</h1>
+        <!-- Form for pizza order -->
+        <form id="pizzaForm">
+            
+            <!-- Dropdown for selecting pizza size -->
+            <label for="size">Choose a size:</label>
+            <select name="size" id="size">
+                <option value="small">Small</option>
+                <option value="medium">Medium</option>
+                <option value="large">Large</option>
+            </select><br>
+
+            <!-- Options for selecting toppings -->
+            <label for="toppings">Choose toppings:</label><br>
+            <input type="checkbox" name="toppings" value="cheese"> Cheese<br>
+            <input type="checkbox" name="toppings" value="pepperoni"> Pepperoni<br>
+            <input type="checkbox" name="toppings" value="mushrooms"> Mushrooms<br>
+
+            <!-- Dropdown for selecting crust type -->
+            <label for="crust">Choose crust type:</label>
+            <select name="crust" id="crust">
+                <option value="thin">Thin</option>
+                <option value="thick">Thick</option>
+                <option value="stuffed">Stuffed</option>
+            </select><br>
+
+            <!-- Dropdown for selecting sauce type -->
+            <label for="sauce">Choose sauce:</label>
+            <select name="sauce" id="sauce">
+                <option value="tomato">Tomato</option>
+                <option value="whiteGarlic">White Garlic</option>
+                <option value="pesto">Pesto</option>
+            </select><br>
+
+            <!-- Checkbox for extra cheese option -->
+            <label for="cheese">Extra cheese:</label>
+            <input type="checkbox" name="cheese" id="cheese"><br>
+
+            <!-- Button to submit the form -->
+            <button type="submit">Order</button>
+        </form>
+        <!-- Paragraph to display student information or pizza order summary -->
+        <p id="studentInfo"></p>
+    </div>
+    <!-- Link to external JavaScript file -->
+    <script src="./script.js" defer></script>
+</html>
